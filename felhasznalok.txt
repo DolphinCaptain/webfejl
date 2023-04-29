@@ -1,0 +1,1 @@
+a:8:{s:9:"firstname";s:8:"Richárd";s:7:"surname";s:7:"Jámbor";s:5:"email";s:18:"jricsi11@gmail.com";s:8:"username";s:9:"jambi2000";s:8:"password";s:9:"jambi2000";s:3:"age";s:2:"20";s:6:"gender";s:4:"male";s:6:"topics";a:3:{i:0;s:12:"mobilephones";i:1;s:11:"touchscreen";i:2;s:12:"applications";}}

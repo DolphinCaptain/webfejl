@@ -1,0 +1,719 @@
+/* ========================================
+        Default Values
+===========================================
+    Font: Poppins, sans serif
+    Colors:
+    1 blue #112E40;
+    2 Orange #FB4737;
+    3 grey #777;
+    4 white #f0f0f0
+
+
+  1920x1080-as felbontásra lett keszitve
+ */
+/*=========================================
+     alap beallitasok kezdete
+===========================================*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Poppins;
+}
+
+body {
+    text-align: justify;
+    color: #1e272e;
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*=========================================
+     alap beallitasok vege
+-------------------------------------------
+     header es navigacios menu kezdete
+===========================================*/
+
+
+header {
+    width: 100%;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #112E40;
+    z-index: 10000;
+    position: fixed;
+    box-shadow: 0 3px 20px #101010;
+}
+
+.heading {
+    max-width: 1400px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.heading h1 {
+    color: #f0f0f0;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.heading h1 span {
+    color: #FB4737;
+}
+
+
+.nav a {
+    color: #fff;
+    font-size: 19px;
+    padding: 5px 30px;
+    border-right: 1px solid #FB4737;
+    transition: color .3s ease-in-out;
+}
+
+
+.nav > li > a:hover {
+    color: #FB4737;
+}
+
+.nav .current {
+    color: #FB4737;
+}
+
+.nav .current:hover {
+    color: #fff;
+}
+
+/*=========================================
+     header es navigacios menu vege
+-------------------------------------------
+     Main kezdete
+     hatterkep section es cim kezdete
+===========================================*/
+aside {
+    max-width: 150px;
+    margin-top: 300px;
+    margin-right: 20px;
+    padding: 10px;
+    float: right;
+    border: #FB4737 2px solid;
+    border-radius: 10px;
+}
+
+aside a {
+    color: #FB4737;
+}
+
+aside a:hover {
+    color: #112E40;
+}
+
+.fooldal-section {
+    background-image: url("../img/tumblr_o57wmcyWjp1rnqolfo1_540_photo_x4.png");
+    padding-top: 720px;
+    padding-bottom: 280px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.technologia-section {
+    background-image: url("../img/stars_galaxies-wallpaper-2560x1440.jpg");
+    padding-top: 720px;
+    padding-bottom: 280px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.gyartok-section {
+    background-image: url("../img/neon.jpg");
+    padding-top: 720px;
+    padding-bottom: 280px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.forum-section {
+    background-image: url("../img/purp.jpg");
+    padding-top: 720px;
+    padding-bottom: 280px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.regisztracio-section {
+    background-image: url("../img/1511096297.jpg");
+    padding-top: 720px;
+    padding-bottom: 280px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.bejelentkezes-section {
+    background-image: url("../img/Soft-Green-leaves.jpg");
+    padding-top: 720px;
+    padding-bottom: 280px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.hirlevel-section {
+    background-image: url("../img/purp.jpg");
+    padding-top: 720px;
+    padding-bottom: 280px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.profil-section {
+    background-image: url("../img/profil.jpg");
+    padding-top: 720px;
+    padding-bottom: 280px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.cim {
+    text-transform: uppercase;
+    text-align: center;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 6px #000000;
+    position: center;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    font-weight: 300;
+    font-size: 38px;
+
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    animation-name: floating;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+.container {
+    font-size: 16pt;
+    max-width: 1400px;
+    margin: 40px auto;
+    background-color: #fff;
+}
+
+.container h2 {
+
+    padding: 40pt 0;
+    font-size: 25pt;
+
+}
+
+.container p {
+    padding-bottom: 20pt;
+}
+
+/*=========================================
+       hatterkep section es cim vege
+-------------------------------------------
+       oldalak tartalmi formázása
+===========================================*/
+
+/*=========================================
+      Főoldal tartalmi formazasa
+===========================================*/
+
+.telefonokrol {
+    margin-top: 30px;
+}
+
+.telefonokrol h2 {
+    text-shadow: 1px 5px 5px grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 3px;
+    white-space: normal;
+    line-height: normal;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #112E40;
+    margin: 10px 0;
+}
+
+.telefonokrol p {
+    margin: 70px 0;
+}
+
+.telo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kep {
+    width: 30%;
+}
+
+.kep img {
+    width: 100%;
+}
+
+.kep h3 {
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+/*------------------------------
+Portfolio section
+------------------------------*/
+.portfolio {
+    margin-top: 100px;
+}
+
+.portfolio h2 {
+    text-shadow: 1px 5px 5px grey;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+}
+
+.portfolio-kepek {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    margin-top: 70px;
+}
+
+.portfolio-kepek img {
+    border: 2px solid #112E40;
+    width: 32%;
+    margin-bottom: 30px;
+}
+
+/*------------------------------
+torténelem section
+------------------------------*/
+.tortenelem {
+    margin-top: 80px;
+}
+
+.tortenelem h2 {
+    text-shadow: 1px 5px 5px grey;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+}
+
+.tortenelem-szoveg {
+    margin-top: 70px;
+}
+
+.tortenelem-szoveg img {
+    width: 300px;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.tortenelem-szoveg p {
+    font-size: 20px;
+}
+
+/*------------------------------
+oldal section
+------------------------------*/
+.oldal h2 {
+    text-shadow: 1px 5px 5px grey;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+}
+
+/*=========================================
+    Technologia oldal tartalmi formazasa
+===========================================*/
+
+
+b {
+    outline-style: dashed;
+    outline-color: #112E40;
+}
+
+/*=========================================
+       Gyartok oldal tartalmi formazasa
+===========================================*/
+
+.container > p {
+
+    padding-top: 50px;
+}
+
+.piacvezetok {
+    font-size: 21px;
+    margin-top: 50px;
+    padding: 40px 0;
+}
+
+.markak {
+    background-color: #112E40;
+    margin-bottom: 50px;
+    display: flex;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.markak .markak-text {
+    padding: 10px;
+}
+
+
+.markak-text h3 {
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 15px;
+}
+
+.markak-text p {
+    font-weight: 300;
+    padding: 0 0 10px 0;
+}
+
+.markak img {
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    filter: grayscale(30%);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border: 10px solid transparent;
+}
+
+.kepek:hover {
+    filter: grayscale(0);
+    border: 8px solid #FB4737;
+    transform: scale(1.01);
+
+}
+
+.szazalek {
+    background: #112E40;
+    font-size: 28pt;
+    color: #FB4737;
+    margin-top: 120px;
+    width: 1400px;
+    height: 600px;
+    position: center;
+    border-collapse: collapse;
+    border: 5px #FB4737 solid;
+    padding: 30px;
+}
+
+.szazalek caption {
+    font-size: 29px;
+    color: #112E40;
+    padding: 10px;
+}
+
+.szazalek th, td {
+    border: 3px solid #FB4737;
+    vertical-align: middle;
+    text-align: center;
+    color: #f0f0f0;
+}
+.prof{
+    width: 800px;
+    height: 600px;
+}
+.prof th form{
+    padding: 30px;
+    alignment: bottom;
+}
+
+/*=========================================
+       Fórum oldal tartalmi formazasa
+===========================================*/
+
+.kerdes-valasz::first-letter {
+    color: #FB4737
+}
+
+
+.kerdes-div {
+    background: #f0f0f0;
+    border: #112E40 3px solid;
+    margin: 50px 0;
+    padding: 30px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.kerdes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.shape {
+    width: 16px;
+    height: 32px;
+    position: relative;
+    background-color: #FB4737;
+    margin-right: 30px;
+}
+
+.shape:before {
+    content: "";
+    position: absolute;
+    right: -16px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 16px solid #FB4737;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+}
+
+.kerdes h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-left: 7px;
+}
+
+.kerdes-valasz a {
+    float: right;
+    padding-right: 40px;
+    font-size: 18px;
+    color: #FB4737;
+    transition: all .3s ease;
+
+}
+
+.kerdes-valasz a:hover {
+    color: #1e272e;
+
+}
+
+.kerdes-valasz p {
+    padding: 0 20px;
+    text-align: justify;
+    margin-bottom: 7px;
+}
+
+/*=========================================
+    Regisztració oldal tartalmi formazasa
+===========================================*/
+
+#reg{
+    padding-top: 50px;
+}
+
+div#container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+form#reg fieldset {
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto 30px auto;
+    background: #E8F2F6;
+    position: relative;
+    border: 2px solid #AFD3E0;
+}
+
+form#reg fieldset legend {
+    padding: 5px 10px;
+    background: red;
+    color: white;
+    width: 130px;
+    position: absolute;
+    top: -11px;
+    border: 1px solid black;
+}
+
+form#reg fieldset fieldset {
+    width: 300px;
+    margin: 20px 0 0 0;
+    background: #fff;
+}
+
+form#reg fieldset fieldset legend {
+    background: red;
+    border: 1px solid black;
+    color: #f4f4f4;
+}
+
+form#reg ol {
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+form#reg ol li {
+    padding: 5px 0;
+    clear: both;
+}
+
+form#reg ol li label {
+    width: 150px;
+    float: left;
+}
+
+form#reg em {
+    color: red;
+}
+
+form#reg input[type="text"],
+form#reg input[type="password"] {
+    width: 190px;
+    padding: 4px;
+    border: 2px solid #AFD3E0;
+    color: #6f96a5;
+}
+
+form#reg input[type="submit"], form#reg input[type="reset"] {
+    background: red;
+    border: 1px solid black;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+select {
+    border: 2px solid #AFD3E0;
+    padding: 3px;
+}
+
+
+/*=========================================
+        Ugras a lap tetejere gomb
+===========================================*/
+
+.top {
+    font-size: 15pt;
+    position: fixed;
+    right: 2%;
+    bottom: 4%;
+    display: block;
+    background-color: #FB4737;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    text-shadow: 2px 2px 1px #777;
+}
+
+.top:hover {
+    background-color: #1e272e;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+
+/*=========================================
+        Main vege
+-------------------------------------------
+        Footer kezdete
+===========================================*/
+
+
+footer {
+    background-color: #1e272e;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+footer div {
+    width: available;
+    margin: auto;
+}
+
+footer div p {
+    padding: 30px 30px;
+    font-size: 18px;
+}
+
+
+/*=========================================
+       Footer vege
+-------------------------------------------
+        Keyframes
+===========================================*/
+
+
+@keyframes floating {
+    from {
+        top: 0;
+    }
+    to {
+        top: -380px;
+    }
+}
+
+/*
+-------------------------------------------
+Keyframes
+===========================================*/
+
+@media print {
+    * {
+        background: transparent;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    .header, aside, footer, .top {
+        display: none
+    }
+
+    @page {
+        background-image: none;
+        margin: .5cm 1cm;
+
+    }
+
+    h2 {
+        page-break-after: avoid;
+    }
+
+}
